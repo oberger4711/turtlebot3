@@ -164,13 +164,13 @@
 
   <link name="imu_link"/>
 
-  <joint name="scan_joint" type="fixed">
+  <joint name="rgbd_joint" type="fixed">
     <parent link="base_link"/>
-    <child link="base_scan"/>
-    <origin xyz="-0.032 0 0.172" rpy="0 0 0"/>
+    <child link="rgbd"/>
+    <origin xyz="-0.032 0 0.172" rpy="1.57079632679 3.14159265359 1.57079632679"/>
   </joint>
 
-  <link name="base_scan">
+  <link name="rgbd">
     <visual>
       <origin xyz="0 0 0.0" rpy="0 0 0"/>
       <geometry>
